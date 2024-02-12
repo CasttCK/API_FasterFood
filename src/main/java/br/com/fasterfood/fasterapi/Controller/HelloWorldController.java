@@ -1,4 +1,4 @@
-package br.com.fasterfood.fasterapi.controller;
+package br.com.fasterfood.fasterapi.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
