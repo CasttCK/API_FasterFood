@@ -18,17 +18,15 @@ public class ClienteController {
 
     @GetMapping("/ativar")
     @ResponseBody
-    public String ativar() {
+    public void ativar() {
         Cliente cliente = new Cliente("Vinicius", "vini.teste@gmail.com", "988268294");
-
-        return clienteService.ativarCliente(cliente);
+        clienteService.ativarCliente(cliente);
     }
 
     @GetMapping("/desativar")
     @ResponseBody
-    public String desativar() {
-        Cliente cliente = new Cliente("Vinicius", "vini.teste@gmail.com", "988268294");
-
-        return clienteService.desativarCliente(cliente);
+    public void desativar() {
+        Cliente cliente = new Cliente("Vinicius_Desativado", "vini.teste@gmail.com", "988268294");
+        clienteService.desativarCliente(cliente);
     }
 }
