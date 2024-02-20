@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ClienteService {
-    @TipoDoNotificador(NivelUrgencia.ALTA)
+    @TipoDoNotificador(NivelUrgencia.BAIXA)
     @Autowired
     private Notificador notificador;
 
