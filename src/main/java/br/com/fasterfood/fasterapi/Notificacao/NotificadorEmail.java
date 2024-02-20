@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Primary
+@TipoDoNotificador(NivelUrgencia.BAIXA)
 @Component
 public class NotificadorEmail implements Notificador {
     private String hostSmtp;

@@ -4,6 +4,7 @@ import br.com.fasterfood.fasterapi.Model.Cliente;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
+@TipoDoNotificador(NivelUrgencia.MEDIA)
 @Component
 public class NotificadorSms implements Notificador {
     @Override

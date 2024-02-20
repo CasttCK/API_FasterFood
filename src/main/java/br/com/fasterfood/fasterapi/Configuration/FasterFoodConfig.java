@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class FasterFoodConfig {
-    @Primary
     @Bean
     public NotificadorEmail notificadorEmail (){
         NotificadorEmail notificador = new NotificadorEmail("smtp.algamail.com.br");
